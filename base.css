@@ -1,0 +1,215 @@
+
+*{
+font-family: 'Merriweather', serif;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+
+
+
+
+/*header styles*/
+
+header h1, h2, h3, p {
+	text-align: center;
+}
+
+
+header {
+    position: relative;
+    padding-bottom: 2em;
+   
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 6px;
+    border-bottom: 5px solid #339966;
+    width: 90vw;                       
+    left: 50%;                           
+    transform: translateX(-50%);        
+}
+header::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    border-bottom: 2px solid #339966;
+    width: 90vw;                      
+    left: 50%;                           
+    transform: translateX(-50%);        
+}
+
+header h1 {
+	background-color: #339966;
+	color: white;
+	padding-top: 2em;
+	padding-bottom: 2em;
+	margin:0;
+}
+
+
+
+/*color styles*/
+
+h1,
+h2,
+h3 {
+	color: black;
+}
+
+label, p, select {
+	color: #476b6b;
+}
+
+body {
+	background-color: #f6fcf9;
+}
+
+span {
+	color: grey;
+	margin-left: .5em;
+	
+}
+
+/*body styles*/
+
+p {
+	margin-left: .5em;
+	margin-right: .5em;
+}
+
+
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+    width: 95%;
+    padding: 12px 20px;
+	border: 2px solid #339966;
+	border-radius: 5px;	
+	text-align: left;
+	margin: .5em .5em;
+	outline: none;	
+}
+
+
+#zip {
+	margin-top: 1em;
+}
+
+
+label {
+	margin-left: .5em;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-style: italic;
+  text-align: right;
+}
+
+
+input[type="radio"],
+input[type="checkbox"] {
+	text-align: left;
+}
+
+input[type="radio"] {
+	margin-left: .5em;
+}
+
+
+
+legend{
+	display: none;
+}
+
+#zip {
+	width: 50%;
+}
+
+#newsletter-info {
+	display: block;
+	border-top: 2px solid #339966;
+	width: 90vw;
+	margin: auto;                           
+   		
+}
+
+
+
+#flex {
+	display: flex;
+	flex-direction: column;
+}
+
+textarea {
+	
+	align-self: center;
+	width: 80%;
+	border: 2px solid #339966;
+	min-height: 10em;
+	margin: 2em;
+	outline: none;
+}
+
+
+button {
+	align-self: center;
+	width: 80%;
+	padding: 20px;
+	background-color: #339966;
+	color: white;
+	border-radius: 5px;	
+	margin-top: 5em;
+	outline: none;
+
+}
+
+
+/* styles*/
+
+input:focus, textarea:focus {
+    background-color: #ace3c8;
+    border: 2px solid #339966;
+}
+
+
+input:hover, textarea:hover {
+    background-color: #339966;
+}  
+
+
+.help {
+    display: none;
+    font-size: 90%;
+}
+
+input:focus + .help {
+    display:inline-block;
+}
+
+
+input:focus {
+    transition: all 1s ease-in-out;
+}
+
+/*footer styles*/
+
+footer {
+	padding-top: 1em;
+	padding-bottom: 1em;
+	
+}
+
+.wrapper {
+	min-height: calc(100vh - 84px);
+}

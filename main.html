@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang ="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Registration Form</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="base.css">
+	<link rel="stylesheet" href="nav.css">
+	<link rel="stylesheet" href="normalize.css">
+	<link href='https://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+	<div class="wrapper">
+	
+	<header>
+		<h1>THE CODE REVIEW</h1>
+		<h2>Signup for our newsletter</h2>
+		<p>Get the latest news on how your code is doing right in your inbox</p>
+	</header>	
+	
+	<div class="container">
+	
+		
+		<h2>Contact Information</h2>
+	
+	<form action="https://example.com/" method="post">
+	
+		<fieldset style="border:none">
+			<legend>Contact-information</legend>
+			
+			<div>
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name"  placeholder="Required" pattern="[A-Za-z-0-9]+\s[A-Za-z-'0-9]+" aria-required="true" aria-describedby="name-format">
+				<span id="name-format" class="help"><br>Format: first name last name</span>
+			</div>
+			
+			<div>
+				<label for="email">Email Address:</label>
+				<input type="email" id="email" name="user_email-address" placeholder="Required">
+			</div>
+			
+			<div>
+				<label for="home-number">Home Phone Number:</label>
+				<input type="tel" id="home-number" name="user_homeNumber">
+			</div>
+			
+			<div>
+				<label for="mobile-number">Mobile Phone Number:</label>
+				<input type="tel" id="mobile-number" name="user_mobileNumber">
+			</div>
+			
+			<div>
+				<label for="address">Street Address:</label>
+				<input type="text" id="address" name="user_address">
+			</div>
+			
+			<div>
+				<label for="city">City:</label>
+				<input type="text" id="city" name="user_city">
+			</div>
+			
+			<div class="state">
+				<label for="state">State:</label><br>
+		
+				<select id="state" name="user_state">
+					<option value="Choose-state">Choose State</option>
+					<option value="Mississippi">Mississippi</option>
+					<option value="Washington">Washington</option>
+					<option value="Oklahoma">Oklahoma</option>
+					<option value="Texas">Texas</option>
+					<option value="Virgina">Virgina</option>	
+				</select>
+			</div>
+			
+			<div id="zip">
+				<label for="zip-code">Zip Code:</label>
+				<input type="text" id="zip-code" name="user_zip-code">
+			</div>
+			
+		</fieldset>
+			
+		
+			
+		
+		<div id="newsletter-info">
+			<h2>Newsletter</h2>
+				<p>Select the newsletters you would like to recieve</p>
+			
+		
+			<fieldset style="border:none">
+				<legend>Newsletters</legend>
+				
+					<input type="checkbox" id="HTML-News" value="HTML" name="user_HTML-news"><label class="news" for="HTML-News">HTML News</label><br>
+					<input type="checkbox" id="CSS-News" value="CSS" name="user_CSS-news"><label class="news" for="CSS-News">CSS News</label><br>
+					<input type="checkbox" id="Javascript-News" value="JAVA" name="user_java-news"><label class="news" for="Javascript-News">Javascript News</label><br>
+					<input type="checkbox" id="All-News" value="ALL" name="user_All-news"><label class="news" for="All-News">All of the above</label><br>
+			
+			</fieldset>
+			
+			</div><!--newsletter-info div -->
+		
+		<div id="format-info">		
+			<h3>Newsletter Format</h3>
+			
+		<fieldset style="border:none">
+			<legend>Buttons</legend>
+				<input type="radio" id="HTML" name="newsletter"><label for="HTML" class="html-newsletter">HTML</label><br>
+				<input type="radio" id="plain-text" name="newsletter"><label for="plain-text" class="plain-text-newsletter">Plain Text</label><br>
+		</fieldset>
+		
+		</div><!--format-info div -->
+		
+		<p>Other topics you'd like to hear about</p>
+		
+		<div id="flex">	
+		
+				<textarea id="topics" name="user_topics"></textarea><br>
+			
+				<button type="submit">Clear Text</button><br>	
+				<button type="submit">Sign Up</button><br>
+		</div>	
+	
+		</form>
+	</div><!--container div -->
+	
+	
+	</div><!--wrapper div -->
+	
+			<footer>
+				<p><i>Copyright The Code Review</i></p>
+			</footer>
+						
+	</body>
+	</html>

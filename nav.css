@@ -1,0 +1,127 @@
+
+@media ( max-width: 759px ) {
+
+  form fieldset  div {
+    display: flex;                                      
+    margin-bottom: 5px;
+	}
+
+form  fieldset  div { 
+
+flex-direction: column;
+ } 
+
+    
+form  fieldset  div  label {
+	flex: 0 0 auto; 
+	} 
+	
+}
+
+
+
+@media screen and (min-width: 760px) {
+
+
+ .container {
+	display: block;
+	margin: auto;
+}
+.container {
+	width: 70vw;
+	background-color: white;	
+	
+}	
+	
+header::before {
+   
+    width: 70vw;                       
+          
+}
+header::after {
+    
+    width: 70vw;                                
+}
+
+#newsletter-info {
+	
+	width: 70vw;	                           		
+}
+
+input[type="radio"] {
+	margin-left: 0;
+}
+
+#name-format:after {
+	display: block;
+	
+}
+
+}
+
+@media screen and (min-width: 1024px) {
+
+
+form fieldset  div {
+    display: flex;                                      
+    margin-bottom: 5px;
+	}
+	
+.container {
+	
+	width: 50vw;
+		
+}
+
+
+/* set length of label */
+form  fieldset div  label {
+    flex: 0 0 200px;
+}
+
+/* tell input to take all remaining width */
+form  fieldset  div  input {
+    flex: 1;
+}
+
+	
+header::before {
+   
+    width: 50vw;                       
+          
+}
+header::after {
+    
+    width: 50vw;                                
+}
+
+#newsletter-info {
+	
+	width: 50vw;	                           		
+}
+
+label {
+	margin-top: 1em;
+}
+
+.container h2, h3 {
+	text-align: left;
+	padding-left: 1em;
+	padding-top: 1em;
+}
+
+.container p {
+	text-align: left;
+		padding-left: 1em;
+	
+}
+
+span {
+	color: grey;
+	
+}
+
+
+
+	
+}
